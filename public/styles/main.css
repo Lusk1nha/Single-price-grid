@@ -1,0 +1,212 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
+
+:root {
+  --primary-color-1: hsl(179, 62%, 43%);
+  --primary-color-2: hsl(71, 73%, 54%);
+
+  --neutral-color-1: hsl(204, 43%, 93%);
+  --neutral-color-2: hsl(218, 22%, 67%);
+
+}
+
+* {
+  box-sizing: border-box;
+
+  margin: 0;
+  padding: 0;
+
+  font-family: "Karla", sans-serif;
+
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  -moz-font-smoothing: antialiased;
+  text-rendering: optimizelegibility;
+
+}
+
+body {
+  background-color: var(--neutral-color-1);
+
+  min-height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  padding: 50px 30px 20px;
+
+}
+
+#mainContainer {
+  background: white;
+
+  max-width: 450px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  
+  border-radius: 8px;
+
+  box-shadow: 0 0 50px rgba(0, 0, 0, 0.2);
+  
+
+}
+
+.join-container,
+.pay-container,
+.why-container {
+  background-color: white;
+
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+
+  padding: 30px;
+
+}
+
+.join-container {
+  border-radius: 8px 8px 0px 0px;
+
+}
+
+.join-container * {
+  margin-bottom: 20px;
+
+}
+
+.join-container .join-title {
+  color: var(--primary-color-1);
+  font-size: 1.4rem;
+  font-weight: 700;
+
+}
+
+.join-container .join-guarantee {
+  font-size: 1.1rem;
+  color: var(--primary-color-2);
+
+}
+
+.join-container p {
+  color: var(--neutral-color-2);
+  line-height: 1.5rem;
+
+}
+
+.pay-container {
+  background-color: var(--primary-color-1);
+
+}
+
+.pay-container * {
+  margin-bottom: 20px;
+
+}
+
+.pay-container .pay-title {
+  color: white;
+  font-size: 1.3rem;
+  font-weight: 400;
+
+}
+
+.pay-container h2 {
+  color: var(--neutral-color-1);
+  font-size: 1rem;
+  font-weight: 400;
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+  
+}
+
+.pay-container h2 strong {
+  color: white;
+  font-size: 2rem;
+  font-weight: 700;
+
+  margin: 0;
+  margin-right: 10px;
+
+}
+
+.pay-container h5 {
+  color: var(--neutral-color-1);
+  font-size: 1rem;
+  font-weight: 400;
+
+  margin-bottom: 30px;
+
+}
+
+.pay-container button {
+  background-color: var(--primary-color-2);
+  
+  width: 100%;
+  height: 50px;
+  
+  color: white;
+  font-size: 1rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+
+  margin: 0;
+
+  border: none;
+  border-radius: 6px;
+  outline: none;
+
+  box-shadow: 0 0 7px 2px rgba(0, 0, 0, 0.04);
+
+  cursor: pointer;
+
+}
+
+.why-container {
+  background-color: rgba(74,190,189,255);
+
+  list-style: none;
+
+  border-radius: 0px 0px 8px 8px;
+
+}
+
+.why-container .why-title {
+  color: white;
+  font-size: 1.3rem;
+  font-weight: 400;
+
+  margin-bottom: 20px;
+
+}
+
+.why-container ul {
+  width: 100%;
+  
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  
+}
+
+.why-container li {
+  color: var(--neutral-color-1);
+  font-size: 1.02rem;
+
+  list-style: none;
+
+  margin-bottom: 3px;
+
+}
+
+

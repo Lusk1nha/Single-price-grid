@@ -1,0 +1,53 @@
+@media screen and (min-width: 700px) {
+  #mainContainer {
+    max-width: 800px;
+
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: 50% 50%;
+
+    grid-template-areas: 
+    'top top'
+    'left right'
+    ;
+
+  }
+
+  .join-container,
+  .pay-container,
+  .why-container {
+    min-height: 280px;
+    padding: 40px;
+
+  }
+
+
+  .join-container {
+    min-height: 200px;
+    grid-area: top;
+
+    padding-right: 70px;
+    border-radius: 8px 8px 0 0;
+
+  }
+
+  .pay-container {
+    grid-area: left;
+
+    border-radius: 0 0 0 8px;
+
+  }
+
+  .why-container {
+    grid-area: right;
+
+    border-radius: 0 0 8px 0;
+
+  }
+
+  .why-container li {
+    font-size: 0.9rem;
+
+  }
+
+}
